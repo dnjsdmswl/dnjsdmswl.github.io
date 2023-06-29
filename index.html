@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dnjsdmswl.github.io" />
+    <meta property="og:title" content="BONOBONO" />
+    <meta property="og:description" content="원은지의 자기소개 페이지입니다." />
+    <meta property="og:site_name" content="BONOBONO" />
+    <title>BONOBONO</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+      .profile-img {
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .card {
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        margin-bottom: 2rem;
+      }
+
+      .animated-heading {
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+      .animated-img {
+        animation: fadeInRight 1s ease-in-out;
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-1.25rem);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(-1.25rem);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Additional styling */
+      #about {
+        padding: 40px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #about h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      #about p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #555;
+      }
+
+      #about h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      #about ul {
+        margin-left: 20px;
+        color: #555;
+      }
+
+      #about li {
+        margin-bottom: 5px;
+      }
+
+      /* Additional styling */
+      body {
+        padding-top: 3.75rem;
+      }
+
+      section {
+        margin-bottom: 6.25rem;
+      }
+
+      /* Smaller Navbar */
+      .navbar {
+        min-height: 40px;
+      }
+
+      .navbar-brand {
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+      }
+
+      .navbar-toggler {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.3rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+      }
+
+      /* Additional styles for new functionality */
+      .feature-section {
+        padding: 4rem 0;
+      }
+
+      .feature-section h2 {
+        margin-bottom: 2rem;
+      }
+
+      .project-item {
+        margin-bottom: 1rem;
+      }
+
+      .todo-list {
+        margin-top: 2rem;
+      }
+
+      .blog-section {
+        margin-top: 2rem;
+      }
+
+      .blog-item {
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">자기 소개 페이지</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">프로젝트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#club">동아리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#todo">투두리스트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#videos">영상</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Introduction section -->
+    <section
+      id="about"
+      class="container feature-section"
+      style="margin-top: 56px"
+    >
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <img
+            src="oksisi.jpg"
+            alt="프로필 사진"
+            class="profile-img animated-img"
+          />
+        </div>
+        <div class="col-lg-8">
+          <div class="card-body">
+            <h1 class="animated-heading">안녕하세요!</h1>
+            <p>
+              저는 HTML, CSS, JavaScript 등 웹 개발에 관심이 많은 사람입니다.
+              다양한 프로젝트에 참여하면서 실력을 향상시키고 있습니다.
+            </p>
+            <h2>자기소개</h2>
+            <ul>
+              <li>이름: 원은지</li>
+              <li>나이: 16세</li>
+              <li>이메일: wej0513@dsm.hs.kr</li>
+              <li>전화번호: 010-1994-0210</li>
+              <li>분야: 웹 프론트엔드</li>
+              <li>좋아하는 것: 노래, 떡볶이, 은진쌤🫶</li>
+              <li>출신 학교: 성문중학교</li>
+            </ul>
+            <h2>이력</h2>
+            <ul>
+              <li>웹 개발 공부 시작: 2023년</li>
+              <li>프론트엔드 개발자로 생활한 학교: DSM</li>
+              <li>현재까지 개발한 프로젝트: ABC 프로젝트, IJK 프로젝트</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project section -->
+    <section
+      id="project"
+      class="container feature-section"
+      style="margin-top: 56px"
+    >
+      <h2>프로젝트</h2>
+      <div class="project-item">프로젝트 내용을 추가하세요.</div>
+    </section>
+
+    <!-- Club section -->
+    <section
+      id="club"
+      class="container feature-section"
+      style="margin-top: 56px"
+    >
+      <h2>동아리</h2>
+      <div>동아리 내용을 추가하세요.</div>
+    </section>
+    <!-- Videos section -->
+    <section
+      id="videos"
+      class="container feature-section"
+      style="margin-top: 56px"
+    >
+      <h2>영상</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/5aNnR9Q7VZk"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>
